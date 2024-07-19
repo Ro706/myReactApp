@@ -35,11 +35,11 @@ export default function TextForm(props) {
             <label htmlFor="myBox" className="form-label"><h2>{props.heading}</h2></label>
             <textarea className="form-control" value={text} onChange={handleOnChange} id="myBox" rows="6"></textarea>
         </div>
-        <button className="btn btn-primary mx-2" onClick={handleOnclick}>Convert To Upper Case</button>
-        <button className="btn btn-primary mx-2" onClick={handleOnclickLow}>Convert To Lower Case</button>
-        <button className="btn btn-primary mx-2" onClick={handleExtraSpace}>Remove Extra Space</button>
-        <button className="btn btn-primary mx-2" onClick={handleCopy}>copy</button>
-        <button className="btn btn-primary mx-2" onClick={clear}>clear</button>
+        <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={handleOnclick}>Convert To Upper Case</button>
+        <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={handleOnclickLow}>Convert To Lower Case</button>
+        <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={handleExtraSpace}>Remove Extra Space</button>
+        <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={handleCopy}>copy</button>
+        <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={clear}>clear</button>
     </div>
     <div className="container my-3">
         <h1>Your text summary</h1>
