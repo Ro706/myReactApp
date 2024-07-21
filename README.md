@@ -1,4 +1,4 @@
-# TextUtils
+# TextToolkit
 
 TextUtils is a simple and user-friendly web application built with React.js that allows users to analyze and manipulate text. This application includes features such as converting text to uppercase, converting text to lowercase, removing extra spaces, and copying the text. It also provides a text summary, including word count, character count, and estimated reading time.
 
